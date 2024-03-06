@@ -18,6 +18,7 @@ public class HotelController {
     private HotelService hotelService;
 
     //create
+
     @PostMapping
     public ResponseEntity<Hotel> createUser(@RequestBody Hotel hotel){
         Hotel hotel1 = hotelService.create(hotel);
