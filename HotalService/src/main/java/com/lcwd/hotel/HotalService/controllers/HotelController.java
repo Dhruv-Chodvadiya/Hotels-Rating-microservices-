@@ -23,4 +23,5 @@ public class HotelController {
         Hotel hotel1 = hotelService.create(hotel);
         return ResponseEntity.status(HttpStatus.CREATED).body(hotel1);
     }
+
 }
