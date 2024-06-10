@@ -19,7 +19,6 @@ public class HotelController {
 
     //create
 
-
     //all hotel get
     @GetMapping
     public ResponseEntity<List<Hotel>> getAllHotel(){
