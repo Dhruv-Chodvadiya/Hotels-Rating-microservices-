@@ -14,7 +14,6 @@ import java.util.List;
 public class HotelController {
     @Autowired
     private HotelService hotelService;
-
     //create
     @PostMapping
     public ResponseEntity<Hotel> createUser(@RequestBody Hotel hotel){
@@ -27,7 +26,6 @@ public class HotelController {
         Hotel hotel = hotelService.get(hotelId);
         return ResponseEntity.ok(hotel);
     }
-
     //all hotel get
     @GetMapping
     public ResponseEntity<List<Hotel>> getAllHotel(){
